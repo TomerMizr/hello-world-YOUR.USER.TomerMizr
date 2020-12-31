@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assignment8</title>
+</head>
+<body>
+
+    <h1>welcome! my name is: {{ fullName.firstName }} {{ fullName.lastName }}</h1>
+    <h2> my hobbies:{{ hobbies }}</h2>
+    <h2>list of my hobbies:</h2>
+    <ul>{% for hobby in hobbies %}
+    <li>{{ hobby }}</li>
+    {% endfor %}
+    </ul>
+    <h2>change to upper: {{ hobbies |upper }}</h2>
+{% extends 'about.html' %}
+{% block main %}
+{% endblock %}
+{% include 'inC.html' %}
+</body>
+</html>
